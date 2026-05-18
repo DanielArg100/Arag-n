@@ -25,3 +25,8 @@ ARAGON
 #### Mostrar URL
 
 Settings -> Pages -> Branch -> Save
+
+cd desktop
+
+git clone ...
+
