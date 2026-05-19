@@ -5,72 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban S.A</title>
+    <!-- Anexamos la Hoja de Estilos -->
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    
-    <!--  ! header.encazebado>img+nav.menu>a*4 -->
+
+    <!-- header.encabezado>img+nav.menu>a*4 + Enter -->
     <header class="encabezado">
-        <img src="../src/Gatos/Gato3.jpg" alt="Logo" title="LogoTipo">
+        <a href="../index.html">
+            <img src="../src/Gatos/Gato_mirada.jpeg" alt="Logo" title="LogoTipo" style="border-radius: 100%; padding: 5px;">
+        </a>
         <nav class="menu">
-            <a href="../index.html" class="Ayestaras">MenuPrincipal</a>
-            <a href="" class="Ayestaras">Productxs</a>
-            <a href="" class="Ayestaras">Galerixs</a>
-            <a href="" class="btnContactos">Contactxs</a>
+            <a href="../index.html" class="btncontactos">Menu Principal</a>
+            <a href="Galeria.html" class="btncontactos">Galería</a>
+            <a href="" class="ayestaras">Productos</a>
+            <a href="" class="ayestaras">Contactos</a>
             <a href="" class="favorito">❤️<span id="fav">0</span></a>
-            
         </nav>
     </header>
+
+
+
+    <!-- Carousel de Bootstrap -->
+    <div class="intermedio">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../src/Intermedio/b.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../src/Intermedio/c.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../src/Intermedio/a.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
     <main class="cuerpo">
-        <section class="contenedor_nosotross">
-            <section class ="img_nosotros">
-                <div class="img1_nosotros">
-                    <img src="../src/Gatos/elgatitoloves-elgatitolover.gif" alt="ImagenCard">
+        <!-- section.contendor_nosotros>section.info_contenedor+section.img_nosotros>div.img1_nosotros*3 -->
+        <section class="contendor_nosotros">
+            <section class="img_nosotros">
+                <div class="img1_nosotros foto">
+                    <img src="../src/Gatos/Gat-Dancing1.gif" alt="">
                 </div>
-                <div class="img2_nosotros">
-                    <img src="../src/Gatos/Gat-Dancing1.gif" alt="ImagenCard">
+                <div class="img2_nosotros foto">
+                    <img src="../src/Gatos/kitty-sleepy.gif" alt="">
                 </div>
-                <div class="img3_nosotros">
-                    <img src="../src/Gatos/GatoWhasa.gif" alt="ImagenCard">
+                <div class="img3_nosotros foto">
+                    <img src="../src/Gatos/GatoRabioso.jpeg" alt="">
                 </div>
-                <div class="img4_nosotros">
-                    <img src="../src/Gatos/Gato5.jpg" alt="ImagenCard">
+                <div class="img4_nosotros foto">
+                    <img src="../src/Gatos/Gato2.jpg" alt="">
                 </div>
             </section>
             <section class="info_nosotros">
                 <h1>Danielo Alessandro Caffetera</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates quisquam illo error autem repellat illum, delectus alias accusamus aliquam, omnis minima maxime similique veniam dolores, obcaecati vitae voluptate numquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae consectetur blanditiis
+                    dignissimos cupiditate cum, aut totam quasi accusamus! Nobis, non ratione sint minima itaque
+                    repudiandae vitae labore eaque error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas, veniam vero consectetur quasi
+                    nemo! Rem et ipsam natus sunt dolore, unde quaerat dolorem delectus eligendi obcaecati ab corporis
+                    provident.
+                </p>
+                <div class="signos">
+                    <img src="../src/Galeria/LIBRA.png" alt="Solar">
+                    <img src="../src/Galeria/Gemini.png" alt="Ascendente">
+                    <img src="../src/Galeria/CAPRICORN(1).png" alt="Lunar">
+                </div>
             </section>
         </section>
+
+
     </main>
+
     <footer>
         <div class="info">
-            <img src="../src/Gatos/Gato3.jpg" alt="logo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur porro alias unde, illo dolorum
-                repellendus quasi similique voluptate cumque, beatae minus repellat pariatur deleniti? Porro quod
-                consectetur quo minima.</p>
+            <img src="../src/Gatos/Gato_mirada.jpeg" alt="Logo" title="LogoTipo" style="border-radius: 100%; padding: 5px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas officia quae ut aspernatur.
+                Tenetur voluptatem minus, excepturi porro quaerat temporibus nulla, deleniti reprehenderit soluta
+                reiciendis dolor molestias illum omnis.</p>
         </div>
         <div class="redes">
-            <img src="../src/SRC/github.png" alt="github">
-            <img src="../src/SRC/Instagram.png" alt="Instagram">
-            <img src="../src/SRC/Facebook.png" alt="Facebook">
+            <div>
+                <img src="../src/srcExtra/Instagram.png" alt="IG">
+                <img src="../src/srcExtra/github.png" alt="Github">
+                <img src="../src/srcExtra/Whatsapp.png" alt="Whatsapp">
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.6282444920153!2d-58.46701818888922!3d-34.84043837275716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd6aaca975e65%3A0x7e7f33de3d236b75!2sG%C3%BCemes%202051%2C%20B1842%20Monte%20Grande%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1777413991594!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
         <div class="nav">
-            <nav class="menu">
-                <a href="../index.html" class="Ayestaras">MenuPrincipal</a>
-                <a href="" class="Ayestaras">Productxs</a>
-                <a href="" class="Ayestaras">Galerixs</a>
-                <a href="" class="btnContactos">Contactxs</a>
-            </nav>
+            <a href="../index.html" class="btncontactos">Menu Principal</a>
+            <a href="Galeria.html" class="btncontactos">Galería</a>
+            <a href="" class="ayestaras">Productos</a>
+            <a href="" class="ayestaras">Contactos</a>
+            <a href="" class="favorito">❤️<span id="fav">0</span></a>
         </div>
     </footer>
-    <script type="module" src="script/main.js"></script>
+
+
+    <script type="module" src="../Scripts/main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
 
-</html>
+</htm
