@@ -5,7 +5,7 @@ export const DB=[
         Precio:1652,
         Stock:10,
         Descripcion:'asasasasas',
-        Imagen:'/src/Productos/a.jpg'
+        Imagen:'/src/Gatos/Gato.jpg'
     },
     {
         ID:2,
@@ -13,7 +13,7 @@ export const DB=[
         Precio:1800,
         Stock:5,
         Descripcion:'asasasasas',
-        Imagen:'src/Productos/b.jpg'
+        Imagen:'src/Gatos/Gato2.jpg'
     },
     {
         ID:6,
@@ -21,7 +21,7 @@ export const DB=[
         Precio:1652,
         Stock:2,
         Descripcion:'asasasasas',
-        Imagen:'src/Productos/f.jpg'
+        Imagen:'src/Gatos/Gato3.jpg'
     },
     {
         ID:3,
@@ -29,7 +29,7 @@ export const DB=[
         Precio:1800,
         Stock:10,
         Descripcion:'asasasasas',
-        Imagen:'src/Productos/c.jpg'
+        Imagen:'src/Gatos/Gato4.jpg'
     },
     {
         ID:4,
@@ -37,7 +37,7 @@ export const DB=[
         Precio:1250,
         Stock:3,
         Descripcion:'asasasasas',
-        Imagen:'src/Productos/d.jpg'
+        Imagen:'src/Gatos/Gato5.jpg'
     },
     {
         ID:5,
@@ -45,7 +45,7 @@ export const DB=[
         Precio:2000,
         Stock:20,
         Descripcion:'asasasasas',
-        Imagen:'src/Productos/e.jpg'
+        Imagen:'src/Gatos/Gato6.jpg'
     },
     {
         ID:6,
@@ -53,6 +53,7 @@ export const DB=[
         Precio:2000,
         Stock:20,
         Descripcion:'asasasasas',
-        Imagen:'src/Productos/e.jpg'
+        Imagen:'src/Gatos/Gato7.jpg'
     }
 ]
+

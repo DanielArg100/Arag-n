@@ -17,6 +17,7 @@ function TraerDatos(Datos) {
             <p>${i.Descripcion}</p>
             <img src="${i.Imagen}" alt="img">
             <button onclick="agregarfavorito()" class="btnfav">❤️</button>
+            <button type="button" class="btn btn-primary" onclick="cargarCarritos()">Agregar al carrito</button>
         `
         Contenedor.appendChild(ContenedorAux)
     });
@@ -34,13 +35,13 @@ Filtro.addEventListener('keyup', function () {
     // --> Evitamos que se ejecute el evento por defecto del input
     let Filtros = DB.filter(i => i.Nombre.toLowerCase().includes(Filtro.value.toLowerCase()))
     // --> Llamamos a la función TraerDatos y le pasamos el resultado del filtro como argumento
-    if(Filtros.length>0){
+    if (Filtros.length > 0) {
         TraerDatos(Filtros)
     }
-    else{
-        Contenedor.innerHTML=`<p>Producto no Encontrado</p>`
+    else {
+        Contenedor.innerHTML = `<p>Producto no Encontrado</p>`
     }
-    
+
 })
 
 
@@ -55,9 +56,58 @@ Filtro.addEventListener('keyup', function () {
 //     })
 // }
 
-let contador=0;
+let contador = 0;
 
-window.agregarfavorito=function(){
+window.agregarfavorito = function () {
     contador++;
-    document.getElementById('fav').innerText=contador;
+    document.getElementById('fav').innerText = contador;
+}
+
+const borrarfiltros = document.getElementById('todo')
+const FiltroBuzo = document.getElementById('buzo')
+const FiltroRemera = document.getElementById('remera')
+const FiltroCampera = document.getElementById('campera')
+
+// --> Filtrar
+const FiltrarDatos = (parametro) => {
+    let Filtros = DB.filter(i => i.Nombre.toLowerCase().includes(parametro))
+    // --> Llamamos a la función TraerDatos y le pasamos el resultado del filtro como argumento
+    if (Filtros.length > 0) {
+        TraerDatos(Filtros)
+    }
+    else {
+        Contenedor.innerHTML = `<p>Producto no Encontrado</p>`
+    }
+}
+
+borrarfiltros.addEventListener('click', () => {
+    FiltrarDatos("")
+})
+
+FiltroBuzo.addEventListener('click', () => {
+    FiltrarDatos("buzo")
+})
+
+FiltroCampera.addEventListener('click', () => {
+    FiltrarDatos("campera")
+})
+
+FiltroRemera.addEventListener('click', () => {
+    FiltrarDatos("remera")
+})
+
+window.cargarCarritos = function () {
+    Swal.fire({
+        title: "Custom width, padding, color, background.",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+    });
 }
